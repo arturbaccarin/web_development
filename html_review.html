@@ -1,0 +1,425 @@
+<!-- The opening <html> tag indicates that anything between it and a closing </html> tag is HTML code. -->
+<!-- The <body> tag indicates that anything between it and the closing </body> tag should be shown inside the main browser window.-->
+<!-- Before the <body> element you will often see a <head> element. This contains information about the page -->
+<!-- The contents of the <title> element are either shown in the top of the browser -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Concepts Review</title>
+</head>
+<body>
+	<h2 id="top">Hi, I'm the top of the page</h2>
+
+	<!-- Structural markup: the elements that you can use to describe both headings and paragraphs -->
+	<!-- Semantic markup:  which provides extra information; such as where emphasis is placed in a sentence -->
+	<!-- Heading -->
+	<h1>Hello, I'm the header h1</h1>
+	<p>Hello, I'm inside a paragraphy</p>
+	<p>I'm a <b>bold word</b>!</p>
+	<p>I'm a <i>italic word</i>!</p>
+	<p>I'm a <sup>superscript</sup>!</p>
+	<p>I'm a <sub>subscript</sub>!</p>
+
+	<!-- Line Breaks & Horizontal Rules -->
+	<p>Hello, I'm a <br /> Line Breaker and I'm a <hr /> Horizontal Rules</p>
+
+	<!-- The use of the strong element indicates that its content has strong importance. -->
+	<p>The use of the <strong>strong element</strong> indicates that its content has strong importance.</p>
+	<!-- The em element indicates emphasis that subtly changes the meaning of a sentence. -->
+	<p>The <em>emphasis element</em> indicates emphasis that subtly changes the meaning of a sentence.</p>
+
+	<!-- QUOTATIONS -->
+	<!-- The blockquote element is used for longer quotes that take up an entire paragraph. -->
+	<p>The <blockquote>blockquote element</blockquote> is used for longer quotes that take up an entire paragraph.</p>
+
+	<!-- The q element is used for shorter quotes that sit within a paragraph. -->
+	<p>The <q>q element</q> is used for shorter quotes that sit within a paragraph.</p>	
+
+	<!-- Abbreviations & Acronyms -->
+	<p><abbr title="Professor">Prof</abbr> Stephen Hawking is a theoretical physicist and cosmologist.</p>
+	<p><acronym title="National Aeronautics and Space Administration">NASA</acronym> do some crazy space stuff.</p>
+
+	<!-- Citations & Definitions -->
+	<p><cite>A Brief History of Time</cite> by Stephen Hawking has sold over ten million copies worldwide.</p>
+
+	<!-- Author Details -->
+	<address>
+		<p><a href="mailto:homer@example.org">homer@example.org</a></p><p>742 Evergreen Terrace, Springfield.</p>
+	</address>
+
+	<!-- Changes to Content -->
+	<p>It was the <del>worst</del> <ins>best</ins> idea she had ever had.</p>
+
+	<!-- Structural markup includes elements such as <h1>, <h2>, and <p>. 
+		Semantic information is carried in elements such as <cite> and <em>.-->
+
+
+
+	<!-- LISTS -->
+	<!-- Ordered Lists -->
+	<ol>
+	  <li>Chop potatoes into quarters</li>
+	  <li>Simmer in salted water for 15-20 minutes until tender</li>
+	  <li>Heat milk, butter and nutmeg</li>
+	  <li>Drain potatoes and mash</li>
+	  <li>Mix in the milk mixture</li>
+	</ol>
+
+	<!-- Unorderes Lists -->
+	<ul>
+	  <li>1kg King Edward potatoes</li>
+	  <li>100ml milk</li>
+	  <li>50g salted butter</li>
+	  <li>Freshly grated nutmeg</li>
+	  <li>Salt and pepper to taste</li>
+	</ul>
+
+	<!-- Definition Lists -->
+	<!-- The definition list is created with the dl element and usually consists of a series of terms and their definitions. -->
+	<dl>
+	  <dt>Sashimi</dt>
+	  <dd>Sliced raw fish that is served with 
+	      condiments such as shredded daikon radish or 
+	      ginger root, wasabi and soy sauce</dd>
+	  <dt>Scale</dt>
+	  <dd>A device used to accurately measure the 
+	      weight of ingredients</dd>
+	  <dd>A technique by which the scales are removed 
+	      from the skin of a fish</dd>
+	  <dt>Scamorze</dt>
+	  <dt>Scamorzo</dt>
+	  <dd>An Italian cheese usually made from whole 
+	      cow's milk (although it was traditionally made 
+	      from buffalo milk)</dd>
+	</dl>
+
+	<!-- NESTED LISTS -->
+	<ul>
+	  <li>Mousses</li>
+	  <li>Pastries
+	    <ol type="a">
+	      <li>Croissant</li>
+	      <li>Mille-feuille</li>
+	      <li>Palmier</li>
+	      <li>Profiterole</li>
+	    </ol>
+	  </li>
+	  <li>Tarts</li>
+	</ul>
+
+
+
+	<!-- LINKS -->
+	<!-- linking to other sites -->
+	<a href="http://www.imdb.com">IMDB</a>
+
+	<!-- linking to other pages on the same site -->
+	<a href="movies.html">Movies on the same site</a>
+
+	<!-- email links -->
+	<a href="mailto:teste@ig.com.br">Email test</a>
+
+	<!-- opening links in a new window -->
+	<a href="https://www.google.com" target="_blank">Google in a new tab</a>
+
+	<!-- linking to a specific part of the same page -->
+	<p><a href="#top">Let's go to the top</a></p>
+
+
+
+	<!-- IMAGES -->
+	<img src="imgs/quokka.jpg" alt="This is a quokka" title="Big happy" height="150" width="300" />
+	<br/>
+	<img src="https://img.vixdata.io/pd/jpg-large/pt/sites/default/files/q/quokka-animal-close-0421-1400x800.jpg" height="150" width="300"/>
+
+	<img src="https://cdn.glitch.com/0e4d1ff3-5897-47c5-9711-d026c01539b8%2Fbddfd6e4434f42662b009295c9bab86e.gif?v=1573157191712" alt="this slowpoke moves"  width="250" alt="404 image"/>
+
+
+
+	<!-- BASIC TABLE STRUCTURE -->
+	<!-- The <table> element is used to create a table. The tr stands for table row. t is followed by one or more. The td stands for table data. -->
+	<table>
+	  <tr>
+	    <td>15</td>
+	    <td>15</td>
+	    <td>30</td>
+	  </tr>
+	  <tr>
+	    <td>45</td>
+	    <td>60</td>
+	    <td>45</td>
+	  </tr>
+	  <tr>
+	    <td>60</td>
+	    <td>90</td>
+	    <td>90</td>
+	  </tr>
+	</table>
+
+	<!-- The <th> element is used just like the  <td> element but its purpose is to represent the heading for either a column or a row. -->
+	<table>
+	  <tr>
+	    <th>empty</th>
+	    <th scope="col">Saturday</th>
+	    <th scope="col">Sunday</th>
+	  </tr>
+	  <tr>
+	    <th scope="row">Tickets sold:</th>
+	    <td>120</td>
+	    <td>135</td>
+	  </tr>
+	  <tr>
+	    <th scope="row">Total sales:</th>
+	    <td>$600</td>
+	    <td>$675</td>
+	  </tr>
+	</table>
+
+	<!-- Spanning Columns - Sometimes you may need the entries in a table to stretch across more than one column. -->
+	<table>
+	  <tr>
+	    <th></th>
+	    <th>9am</th>
+	    <th>10am</th>
+	    <th>11am</th>
+	    <th>12am</th>
+	  </tr>
+	  <tr>
+	    <th>Monday</th>
+	    <td colspan="2">Geography</td>
+	    <td>Math</td>
+	    <td>Art</td>
+	  </tr>
+	  <tr>
+	    <th>Tuesday</th>
+	    <td colspan="3">Gym</td>
+	    <td>Home Ec</td>
+	  </tr>
+	</table>
+
+	<!-- Spanning Rows -->
+	<table>
+	  <tr>
+	    <th></th>
+	    <th>ABC</th>
+	    <th>BBC</th>
+	    <th>CNN</th>
+	  </tr>
+	  <tr>
+	    <th>6pm - 7pm</th>
+	    <td rowspan="2">Movie</td>
+	    <td>Comedy</td>
+	    <td>News</td>
+	  </tr>
+	  <tr>
+	    <th>7pm - 8pm</th>
+	    <td>Sport</td>
+	    <td>Current Affairs</td>
+	  </tr>
+	</table>
+
+
+	<!-- LONG TABLES : There are three elements that help distinguish between the main content of the table and the first and last rows (which can contain different content). -->
+	<!-- The headings of the table should sit inside the <thead> element. -->
+	<!-- The body should sit inside the <tbody> element. -->
+	<!-- The footer belongs inside the <tfoot> element. -->
+	<table>
+	  <thead>
+	    <tr>
+	      <th>Date</th>
+	      <th>Income</th>
+	      <th>Expenditure</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th>1st January</th>
+	      <td>250</td>
+	      <td>36</td>
+	    </tr>
+	    <tr>
+	      <th>2nd January</th>
+	      <td>285</td>
+	      <td>48</td>
+	    </tr>
+	    <!-- additional rows as above -->
+	    <tr>
+	      <th>31st January</th>
+	      <td>129</td>
+	      <td>64</td>
+	     </tr>
+	  </tbody>
+	  <tfoot>
+	    <tr>
+	      <td></td>
+	      <td>7824</td>
+	      <td>1241</td>
+	    </tr>
+	  </tfoot>
+	</table>
+
+
+
+	<!-- FORMS -->
+	<!-- There are several types of form controls: 
+		Adding Text
+		Text input (single-line); Password input; Text area (multi-line)
+		
+		Making choices
+		Radio buttons; Checkboxes; Drop-down boxes
+
+		Submitting Forms
+		Submit buttons; Image buttons
+
+		Uploading Files
+		File Upload -->
+	<!-- action Every <form> element requires an action attribute. -->
+	<!-- method Forms can be sent using one of two methods: get or post. -->
+	<form action="" metod="get">  <p>This is where the form controls will appear.</p></form>
+
+	<!-- The <input> element is used to create several different form controls. -->
+	<form action="http://www.example.com/login.php">
+	  <p>Username:
+	    <input type="text" name="username" size="15" 
+	      maxlength="30" />
+	  </p>
+	</form>
+
+	<!-- RADIO BUTTON / CHECKBOX -->
+	<form action="http://www.example.com/profile.php">
+	  <p>Please select your favorite genre:
+	    <br />
+	    <input type="radio" name="genre" value="rock" 
+	      checked="checked" /> Rock
+	    <input type="radio" name="genre" value="pop" /> 
+	      Pop
+	    <input type="radio" name="genre" value="jazz" /> 
+	      Jazz
+	  </p>
+	</form>
+
+	<!-- DROP DOWN LIST BOX -->
+	<form action="http://www.example.com/profile.php">
+	  <p>What device do you listen to music on?</p>
+	  <select name="devices">
+	    <option value="ipod">iPod</option>
+	    <option value="radio">Radio</option>
+	    <option value="computer">Computer</option>
+	  </select>
+	</form>
+
+	<!-- FILE INPUT BOX -->
+	<form action="http://www.example.com/upload.php" method="post">
+	  <p>Upload your song in MP3 format:</p>
+	  <input type="file" name="user-song" /><br />
+	  <input type="submit" value="Upload" />
+	</form>
+
+	<!-- SUBMIT BUTTON -->
+	<form action="http://www.example.com/subscribe.php">
+	  <p>Subscribe to our email list:</p>
+	  <input type="text" name="email" />
+	  <input type="submit" name="subscribe" 
+	    value="Subscribe" />
+	</form>
+
+	<!-- You can group related form controls together inside the <fieldset> element. -->
+	<fieldset>
+	  <legend>Contact details</legend>
+	  <label>Email:<br />
+	  <input type="text" name="email" /></label><br />
+	  <label>Mobile:<br />
+	  <input type="text" name="mobile" /></label><br />
+	  <label>Telephone:<br />
+	  <input type="text" name="telephone" /></label>
+	</fieldset>
+
+	<!-- FORM VALIDATION -->
+	<form action="http://www.example.com/login/" method="post"> 
+	  <label for="username">Username:</label>
+	  <input type="text" name="username"
+	    required="required" /></title><br /> 
+	  <label for="password">Password:</label>
+	  <input type="password" name="password"
+	    required="required" /> 
+	  <input type="submit" value="Submit" />
+	</form>
+
+	<!-- DATE INPUT -->
+	<form action="http://www.example.com/bookings/" method="post">
+	  <label for="username">Departure date:</label>
+	  <input type="date" name="depart" />
+	  <input type="submit" value="Submit" />
+	</form>
+
+	<!-- EMAIL & URL INPUT -->
+	<form action="http://www.example.org/subscribe.php"> 
+	  <p>Please enter your email address:</p>
+	  <input type="email" name="email" />
+	  <input type="submit" value="Submit" />
+	</form>
+
+	<!-- SEARCH INPUT -->
+	<form action="http://www.example.org/search.php">
+	  <p>Search:</p>
+	  <input type="search" name="search" />
+	  <input type="submit" value="Search" />
+	</form>
+
+
+
+	<!-- DOCTYPES -->
+	<!-- Because there have been several versions of HTML, each web page should begin with a DOCTYPE declaration to tell a 
+browser which version of HTML the page is using -->
+
+	<!-- ID ATTRIBUTE -->
+	<!-- Every HTML element can carry the id attribute. It is used to uniquely identify that element from other elements on the page. -->
+
+	<!-- CLASS ATTRIBUTE -->
+	<!-- you will want a way to identify several elements as being different from the other elements on the page. -->
+
+	<!-- BLOCK ELEMENTS -->
+	<!-- Some elements will always appear to start on a new line in the browser window. These are known as block level elements. -->
+	<!-- Examples of block elements are <h1>, <p>, <ul>, and <li>. -->
+
+	<!-- INLINE ELEMENTS -->
+	<!-- Some elements will always appear to continue on the same line as their neighbouring elements. These are known as 
+inline elements. -->
+	<!-- Examples of inline elements are <a>, <b>, <em>, and <img>. -->
+
+
+	<!-- GROUPING TEXT & ELEMENTS IN A BLOCK -->
+	<!-- The <div> element allows you to group a set of elements together in one block-level box. -->
+	<div id="header">
+	  <img src="images/logo.gif" alt="Anish Kapoor" />
+	  <ul>
+	    <li><a href="index.html">Home</a></li>
+	    <li><a href="biography.html">Biography</a></li>
+	    <li><a href="works.html">Works</a></li>
+	    <li><a href="contact.html">Contact</a></li>
+	  </ul>
+	</div><!-- end of header -->
+
+
+	<!-- GROUPING TEXT & ELEMENTS INLINE -->
+	<!-- The <span> element acts like an inline equivalent of the <div> element. -->
+	<p>Anish Kapoor won the Turner Prize in 1991 and exhibited at the <span class="gallery">Tate Modern</span> gallery in London in 2003.</p>
+
+	<!-- IFRAMES -->
+	<!-- An iframe is like a little window that has been cut into your page — and in that window you can see another page. The term iframe is an abbreviation of inline frame. -->
+	<iframe 
+	  width="450" 
+	  height="350" 
+	  src="http://maps.google.co.uk/maps?q=moma+new+york
+	  &amp;output=embed">
+	</iframe>
+
+	<!-- INFORMATION ABOUT YOUR PAGES -->
+	<!-- The <meta> element lives inside the <head> element and contains information about that web page. It is not visible to users but fulfills a number of purposes such as telling search engines about your page, who created it, and whether or not it is time sensitive. (If the page is time sensitive, it can be set to expire.) -->
+
+
+</body>
+</html>
