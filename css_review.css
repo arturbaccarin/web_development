@@ -1,0 +1,281 @@
+/* The key to understanding how CSS works is to imagine that there is an invisible box around every HTML element.
+CSS allows you to create rules that control the way that each individual box (and the contents of that box) is presented. */
+
+/* CSS SELECTORS */
+/*
+UNIVERSAL - * {}
+
+TYPE - h1, h2, h3 {}
+
+CLASS - .note {}
+		p.note {} (Targets only <p> elements whose class attribute has a value of note)
+
+ID - #introduction {}
+
+CHILD - li>a {} (Targets any <a> elements that are children of an <li> element)
+
+DESCENDANT - p a {} (Targets any <a> elements that sit inside a <p> element)
+
+ADJACENT SIBLING - h1+p {} (Targets the first <p> element after any <h1> element)
+
+GENERAL SIBLING - h1~p {} (If you had two <p> elements that are siblings of an <h1> element, this rule would apply to both)
+*/
+
+body {
+	font-family: Arial;
+	background-color: rgb(185,179,175);
+} 
+
+h1 {
+	color: rgb(255,255,255);
+}
+
+/* FOREGROUND COLOR */
+/* The color property allows you to specify the color of text inside an element.
+   RGB HEX or COLOR NAMES */
+
+/* BACKGROUND COLOR */
+/* background-color property sets the color of the background for that box. */
+
+/* OPACITY */
+/* The value is a number between 0.0 and 1.0 */
+#color_test {
+	color: darkcyan;
+	background-color: white;
+	opacity: 0.5;
+}
+
+
+/* SPECIFYING TYPEFACES */
+/* LEADING (line-height): vertical space between lines of text */
+/* LETTER & WORD SPACING (letter-spacing, word-spacing): Kerning is the term typographers use for the space between each letter. */
+/* IDENTING TEXT (text-indent): allows you to indent the first line of text within an element. */
+#type_test {
+	font-family: "Courier New", Courier, monospace;
+	font-size:  12px; /* %, em */
+	font-weight: bold; /* normal */
+	font-style: italic; /* normal, oblique */
+	
+	text-transform: uppercase; /* lowercase, capitalize */
+	text-decoration: underline; /* none, overline, line-through, blink */
+	
+	line-height: 1.4em;
+	letter-spacing: 0.2em;
+	
+	text-align: left;
+	vertical-align: text-top;
+	text-indent: 20px;
+	text-shadow: -1px -1px #666666;
+}
+
+/* FIRST LETTER OR LINE */
+#type_test:first-letter {
+	font-size: 200%;
+}
+
+#type_test:first-line {
+	font-weight: normal;
+	text-decoration: overline;
+}
+
+/* STYLING LINKS */
+a:link {
+	color:  deppink;
+	text-decoration: none;
+}
+
+a:visited {
+	 color: black;
+}
+
+a:hover {
+	 color: white;
+	 text-decoration: underline;
+}
+
+a:active {
+	color: darkcyan;
+}
+
+
+
+/* BOXES */
+/* By default a box is sized just big enough to hold its contents. */
+
+/* LIMITING WIDTH */
+/* Some page designs expand and shrink to fit the size of the user's screen. */
+
+/* OVERFLOWING CONTENT */
+#boxes_test {
+	height: 50px; /* % */
+	weight: 300px;
+	background-color: #0088dd;
+	
+	min-width: 450px;
+	max-width: 650px;
+	min-height: 100px;
+	max-height: 300px;
+
+	overflow: scroll; /* hidden */
+}
+
+/* BORDER, MARGIN & PADDING */
+/* Border: The border separates the edge of one box from another. 
+	Margin: The margin property controls the gap between boxes.;
+	Padding: is the space between the border of a box and any content contained within it;
+*/
+#boxes_test_2 {
+	background-color: red;
+	border-width: 1px 4px 20px 10px; /* thick */
+	border-style: dotted; /* solid, dashed, double, groove, ridge, inset, outset */
+
+	border-color: #bbbbaa #111111 #ee3e80 #0088dd;
+
+	padding: 10px;
+
+	margin: 20px;
+}
+
+#boxes_test_3 {
+	border: 3px dotted #0088dd;
+}
+
+
+/* CHANGE INLINE/BLOCK */
+/* display: allows you to turn an inline element into a block-level element or vice versa */
+li.display {
+	display: inline;
+	margin-right: 10px;
+}
+
+li.coming-soon {
+	display: none; /* This hides an element from the page */
+}
+
+
+/* HIDING BOXES */
+/* visibilit: allows you to hide boxes from users but It leaves a space where the element would have been. */
+li.visibility {
+	visibility: hidden; /* This hides an element from the page */
+}
+
+
+
+/* LISTS, TABLES AND FORMS */
+ol#list_test {
+	list-style-type: lower-roman; /* decimal, decimal-leading-zero, lower/upper-alpha, upper-roman */
+}
+
+/* IMAGE FOR BULLETS */
+ul#list_image {
+	list-style-image: url("imgs/pepe.png");
+}
+
+/* POSITIONING THE MARKER */
+ol#list_test {
+	 list-style-position: inside; /* outside */
+}
+
+
+
+/* TABLE PROPERTIES */
+table {
+  width: 600px;}
+th, td {
+  padding: 7px 10px 10px 10px;}
+th {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 90%;
+  border-bottom: 2px solid #111111;
+  border-top: 1px solid #999;
+  text-align: left;}
+tr.even {
+  background-color: #efefef;}
+tr:hover {
+  background-color: #c3e6e5;}
+.money {
+  text-align: right;}
+
+ /* BORDER ON EMPTY CELLS */
+td {
+	border: 1px solid #0088dd;
+	padding: 15px;
+}
+
+table.one {
+ 	empty-cells: show;
+}
+
+table.two {
+  	empty-cells: hide;
+}
+
+/* GAPS BETWEEN CELLS */
+table.one {
+  	border-spacing: 5px 15px;
+}
+table.two {
+  	border-collapse: collapse;
+}
+
+
+
+/* STYLING TEXT INPUTS */
+input { 
+	font-size: 120%; 
+	color: #5a5854; 
+	background-color: #f2f2f2; 
+	border: 1px solid #bdbdbd; 
+	border-radius: 5px; 
+	padding: 5px 5px 5px 30px; 
+	background-repeat: no-repeat; 
+	background-position: 8px 9px; 
+	display: block; 
+	margin-bottom: 10px;
+} 
+
+input:focus {
+	background-color: #ffffff; 
+	border: 1px solid #b1e1e4;
+} 
+
+
+
+/* STYLING SUBMIT BUTTONS */
+input#submit {
+	color: #444444;
+	text-shadow: 0px 1px 1px #ffffff;
+	border-bottom: 2px solid #b2b2b2;
+	background-color: #b9e4e3;
+	background: -webkit-gradient(linear, left top, 
+	  left bottom, from(#beeae9), to(#a8cfce));
+	background: 
+	    -moz-linear-gradient(top, #beeae9, #a8cfce);
+	background: 
+	    -o-linear-gradient(top, #beeae9, #a8cfce);
+	background: 
+	    -ms-linear-gradient(top, #beeae9, #a8cfce);
+ }
+
+input#submit:hover {
+	color: #333333;
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	background-color: #a0dbc4;
+	background: -webkit-gradient(linear, left top, 
+	    left bottom, from(#a8cfce), to(#beeae9));
+	background: 
+	    -moz-linear-gradient(top, #a8cfce, #beeae9);
+	background: 
+	    -o-linear-gradient(top, #a8cfce, #beeae9);
+	background: 
+	    -ms-linear-gradient(top, #a8cfce, #beeae9);
+ }
+
+
+
+/* CURSOR STYLES */
+a {
+  cursor: move; 
+}

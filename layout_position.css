@@ -1,0 +1,71 @@
+body {
+    width: 750px;
+    font-family: Arial, Verdana, sans-serif;
+    color: #665544;
+}
+
+/* POSITION STATIC */
+h1 {
+    background-color: #efefef;
+    padding: 10px;
+}
+
+p {
+  width: 450px;
+}
+
+
+/* POSITION RELATIVE */
+/* Relative positioning moves an element in relation to where it would have been in normal flow. */
+p.example {
+  position: relative;
+  top: 10px;
+  left: 100px;
+  bottom: 10px;
+}
+
+/* POSITION ABSOLUTE */
+/* When the position property is given a value of absolute, the box is taken out of normal flow and no longer affects the 
+position of other elements on the page. (They act like it is not there.)  */
+h1 {
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 250px;
+}
+
+/* FIXED ABSOLUTE */
+/* Fixed positioning is a type of absolute positioning that requires the position property to have a value of fixed. */
+#fixed_position {
+  position: fixed;
+  top: 0px;
+  left: 50px;
+  padding: 10px;
+  margin: 0px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+/* OVERLAPPING ELEMENTS */
+#overlapping_ele {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  background-color: #efefef;
+  z-index: 10;
+}
+
+blockquote {
+  float: right;
+  width: 275px;
+  font-size: 130%;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+  margin: 0px 0px 10px 10px;
+  padding: 10px;
+  border-top: 1px solid #665544;
+  border-bottom: 1px solid #665544;
+}
